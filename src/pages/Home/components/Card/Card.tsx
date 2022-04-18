@@ -48,7 +48,7 @@ export const CardComponent: React.FC<Weather> = memo(({ ...city }) => {
   return (
     <Link
       to={{
-        pathname: `/${city.name}`,
+        pathname: `Weather-app/${city.name}`,
         state: { ...city.coord, cityName: city.name }
       }}
       style={{ textDecoration: 'none' }}
@@ -102,5 +102,3 @@ export const CardComponent: React.FC<Weather> = memo(({ ...city }) => {
     </Link >
   );
 }, areEqual);
-
-
