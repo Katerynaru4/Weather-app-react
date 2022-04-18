@@ -9,8 +9,8 @@ function App() {
     <Container maxWidth="lg">
       <Header />
       <Switch>
-        <Route exact path="/Weather-app" component={Home} />
-        <Route exact path="/Weather-app/*" component={CityPage} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/city/*" component={CityPage} />
       </Switch>
     </Container>
   );

@@ -29,7 +29,7 @@ export const fetchHourlyWeather =
       dispatch(currentWeatherSlice.actions.fetchWeatherAction());
       const res = await WeatherService.getHourlyWeather(lat, lon);
       if (res.status === 200) {
-        dispatch(currentWeatherSlice.actions.fetchHourlyWeatherSucces(res));
+        dispatch(currentWeatherSlice.actions.fetchHourlyWeatherSuccess(res));
       } else {
         dispatch(currentWeatherSlice.actions.fetchHourlyWeatherError(res));
       }

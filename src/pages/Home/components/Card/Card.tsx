@@ -48,7 +48,7 @@ export const CardComponent: React.FC<Weather> = memo(({ ...city }) => {
   return (
     <Link
       to={{
-        pathname: `Weather-app/${city.name}`,
+        pathname: `/city/${city.name}`,
         state: { ...city.coord, cityName: city.name }
       }}
       style={{ textDecoration: 'none' }}

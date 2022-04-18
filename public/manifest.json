@@ -1,6 +1,6 @@
 {
-  "name": "React Weather App",
-  "start_url": ".",
+  "name": "Weather App",
+  "start_url": "./Weather-app-react",
   "display": "standalone",
   "background_color": "#ffffff"
 }

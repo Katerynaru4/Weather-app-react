@@ -69,7 +69,7 @@ export const currentWeatherSlice = createSlice({
       storage.setItem('citiesList', storage.getItem('citiesList').filter((item: string) => item !== cityName));
       state.citiesWeather = state.citiesWeather.filter(city => city.name !== cityName)
     },
-    fetchHourlyWeatherSucces(
+    fetchHourlyWeatherSuccess(
       state,
       action: PayloadAction<AxiosResponse<hourlyWeatherData>>,
     ) {
